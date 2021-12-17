@@ -24,7 +24,7 @@ export default function Game() {
                 <spacer/>
                 <StartRow team={selectedTeam}/>
                 <spacer/>
-                <LetterRow team={selectedTeam} letter={'A'}/>
+                <LetterRow team={selectedTeam}/>
             </div>
             <Footer/>
         </>
