@@ -1,0 +1,8 @@
+.middleRow {
+    display: contents;
+    position: relative;
+    width: 80vw;
+    max-width: 1000px;
+    gap: 0 10px;
+    justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+{
+    "_" : "-- [ Information associated with each tile ] --",
+
+    "startRow" : {
+        "backgroundImage" : "/ocean-thin-far.jpg"
+    },
+    "middleRow" : {
+        "backgroundImage" : "/ocean-thin-far.jpg"
+    },
+    "mineRow" : {
+        "backgroundImage" : "/ocean-thin-rough.jpg"
+    }
+}

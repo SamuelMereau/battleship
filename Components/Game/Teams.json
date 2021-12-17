@@ -1,0 +1,12 @@
+{
+    "_" : "-- [ Information associated with each team ] --",
+
+    "blue" : {
+        "teamName" : "Blue Team",
+        "colour": "#00BFFF"
+    },
+    "red" : {
+        "teamName" : "Red Team",
+        "colour": "#FF5733"
+    }
+}

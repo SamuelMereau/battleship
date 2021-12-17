@@ -1,0 +1,6 @@
+.boardGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 75px);
+    row-gap: 10px;
+    column-gap: 10px;
+}

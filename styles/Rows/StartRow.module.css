@@ -1,0 +1,4 @@
+.startRow {
+    display: contents;
+    grid-row: 1 / span 7;
+}
