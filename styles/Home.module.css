@@ -41,7 +41,7 @@
     min-height: 50vh;
     left: 1vw;
     transform: translateX(100vw);
-    margin-top: 87px;
+    margin-top: 83px;
     opacity: 0;
     transition: left 1s, transform 1s, opacity 1s;
 }
