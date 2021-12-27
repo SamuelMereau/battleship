@@ -13,6 +13,8 @@ body {
   box-sizing: border-box;
 }
 
+/* HTML Element Styling */
+
 h1 {
   font-family: 'Raleway', 'Montserrat', Helvetica, sans-serif;
 	font-weight: 600;
@@ -23,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-button {
+button, input[type='button'] {
   padding: 10px 75px;
   font-family: 'Montserrat';
   font-size: 12px;
@@ -35,10 +37,19 @@ button {
   transition: margin-bottom 0.3s, box-shadow 0.3s, background 0.4s;
 }
 
-button:hover {
+button:hover, input[type='button']:hover {
   cursor: pointer;
   background: rgb(250, 250, 250);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+  box-shadow: rgba(211, 211, 211, 0.5) 0px 5px 10px;
+}
+
+.smallButton {
+  padding: 5px 10px !important;
+  font-size: 10px !important;
+}
+
+.smallButton:hover {
+  box-shadow: rgba(211, 211, 211, 0.5) 0px 5px 5px !important;
 }
 
 input {
@@ -52,6 +63,74 @@ input {
 input:focus {
   outline: 1px solid deepskyblue;
 }
+
+select {
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 1px solid deepskyblue;
+}
+
+select:focus {
+  outline: 2px solid deepskyblue;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.smallTextField {
+  padding: 6px 8px;
+}  
+
+/* Switch Checkbox */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.2s;
+  border-radius: 34px;
+  transition: 0.2s;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.2s;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+input:checked + .switch-slider {
+  background-color: #2196F3;
+}
+
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
 
 /* Major Button */
 
