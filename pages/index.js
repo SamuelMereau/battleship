@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react';
+import NoScript from '../components/NoScript';
 
 export default function Home() {
   const [hostMenuActive, setHostMenuActive] = useState(false);
@@ -25,6 +26,7 @@ export default function Home() {
     <>
       <Head>
         <title>Battleship</title>
+        <NoScript/>
       </Head>
       <Header/>
       <main id={styles.mainContent}>
@@ -76,7 +78,7 @@ export default function Home() {
                 <div className={styles.option}>
                   <label htmlFor='enableTutorial'>Enable Tutorial</label>
                   <label className='switch'>
-                    <input type='checkbox' name='enableTutorial' id='enableTutorial'></input>
+                    <input type='checkbox' defaultChecked={true} name='enableTutorial' id='enableTutorial'></input>
                     <span className='switch-slider'></span>
                   </label>
                 </div>
