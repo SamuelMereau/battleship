@@ -52,7 +52,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    left: 0vw;
+    left: -4vw;
     transform: translateX(-250px);
     opacity: 0;
     transition: left 1s, transform 1s, opacity 1s;
