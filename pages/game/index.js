@@ -10,8 +10,8 @@ import LetterRow from '../../components/Game/Rows/LetterRow';
 import NoScript from '../../components/NoScript';
 
 export default function Game() {
-    const [selectedTeam, setSelectedTeam] = useState('blue');
-
+    const [selectedTeam, setSelectedTeam] = useState('red');
+    
     return (
         <>
             <Head>
@@ -21,12 +21,12 @@ export default function Game() {
             <main>
                 <div className={styles.boardGrid}>
                     <MineRow team={selectedTeam}/>
-                    <spacer/>
+                    <div/>
                     <MiddleRow team={selectedTeam}/>
-                    <spacer/>
-                    <spacer/>
+                    <div/>
+                    <div/>
                     <StartRow team={selectedTeam}/>
-                    <spacer/>
+                    <div/>
                     <LetterRow team={selectedTeam}/>
                 </div>
             </main>

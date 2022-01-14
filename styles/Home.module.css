@@ -3,7 +3,7 @@
     align-items: center;
     position: relative !important;
     overflow: hidden;
-    height: 65vh;
+    height: 70vh;
 }
 
 .mainMenu {
@@ -38,10 +38,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50vh;
     left: 1vw;
+    width: 250px;
     transform: translateX(100vw);
-    margin-top: 83px;
     opacity: 0;
     transition: left 1s, transform 1s, opacity 1s;
 }
@@ -50,9 +49,10 @@
     position: absolute !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    left: -4vw;
+    align-items: center;
+    width: 600px;
+    height: 90%;
+    left: -350px;
     transform: translateX(-250px);
     opacity: 0;
     transition: left 1s, transform 1s, opacity 1s;
@@ -60,10 +60,14 @@
 
 .hostGameForm {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 450px;
-    width: 300px;
-    overflow: visible;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    flex-wrap: wrap;
+    overflow-y: clip;
+    gap: 10px;
 }
 
 .hostGameForm > div {
@@ -71,6 +75,7 @@
     border: 1px solid #e4e4e4;
     padding: 20px;
     border-radius: 20px;
+    width: 300px;
     height: max-content;
     box-shadow: rgba(211, 211, 211, 0.5) 0px 1px 5px;
 }
@@ -112,6 +117,11 @@
     margin-top: 10px;
 }
 
+.resetToDefault {
+    width: 200px !important;
+    margin-bottom: 20px;
+}
+
 .backArrow {
     margin-right: 20px;
     width: 33px;
@@ -146,4 +156,14 @@
 .slideOutRight {
     left: 100%;
     transform: translateX(100%);
+}
+
+/* Media Rules */
+
+@media screen and (max-width: 600px) and (max-height: 934px) {
+    .hostGameForm {
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        width: 350px;
+    }
 }
