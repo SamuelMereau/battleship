@@ -21,7 +21,7 @@ export default function Home() {
         return styles.mainMenu;
     }
   }
-
+  
   return (
     <>
       <Head>
@@ -49,14 +49,14 @@ export default function Home() {
             </svg>
           </div>
           <form id='hostGameOptionsMenu' className={styles.hostGameForm} onSubmit={function(e) { e.preventDefault() }}>
-            <div id={styles.team}>
+            <div id={styles.team} className={styles.formSection}>
               <label htmlFor='teamName'>Your Team</label>
               <select name='teamName' id='colourOptions'>
                 <option value='blue'>Blue Team</option>
                 <option value='red'>Red Team</option>
               </select>
             </div>
-            <div id={styles.commands}>
+            <div id={styles.commands} className={styles.formSection}>
               <label>Commands Per Row</label>
               <div className={styles.commandsOptions}>
                 <label htmlFor='startRowCommands'>Start Row Commands</label>
@@ -67,7 +67,7 @@ export default function Home() {
                 <input type='text' name='mineRowCommands' id='mineRowCommands' className='smallTextField' defaultValue='4'></input>
               </div>
             </div>
-            <div id={styles.options}>
+            <div id={styles.options} className={styles.formSection}>
               <div className={styles.option}>
                 <label htmlFor='allowSpectators'>Allow Spectators</label>
                 <label className='switch'>
